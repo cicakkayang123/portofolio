@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaEnvelope } from 'react-icons/fa'
 import { HiChevronDown } from 'react-icons/hi'
 
 function Hero({ darkMode }) {
@@ -13,115 +12,79 @@ function Hero({ darkMode }) {
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                >
+                <div className="animate-fade-in">
                     {/* Greeting */}
-                    <motion.p
-                        className={`text-lg md:text-xl ${darkMode ? 'text-primary-400' : 'text-primary-600'} font-medium mb-4`}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2 }}
-                    >
+                    <p className={`text-lg md:text-xl ${darkMode ? 'text-primary-400' : 'text-primary-600'} font-medium mb-4`}>
                         Hello, I'm
-                    </motion.p>
+                    </p>
 
                     {/* Name */}
-                    <motion.h1
-                        className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3 }}
-                    >
-                        <span className="gradient-text">John Doe</span>
-                    </motion.h1>
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-up">
+                        <span className="gradient-text">Nayendra Ajidiwanto Jaelani</span>
+                    </h1>
 
                     {/* Role */}
-                    <motion.h2
-                        className={`text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4 }}
-                    >
-                        Full-Stack Developer
-                    </motion.h2>
+                    <h2 className={`text-xl md:text-2xl lg:text-3xl font-semibold mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'} animate-slide-up delay-100`}>
+                        Informatics & Software Engineering Student
+                    </h2>
 
                     {/* Tagline */}
-                    <motion.p
-                        className={`text-lg md:text-xl max-w-2xl mx-auto mb-10 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.5 }}
-                    >
-                        Building modern, scalable web applications with clean code and exceptional user experiences.
-                    </motion.p>
+                    <p className={`text-lg md:text-xl max-w-2xl mx-auto mb-10 ${darkMode ? 'text-gray-400' : 'text-gray-600'} animate-slide-up delay-200`}>
+                        Passionate about web development and software engineering. Building modern applications and constantly learning new technologies.
+                    </p>
 
                     {/* CTA Buttons */}
-                    <motion.div
-                        className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.6 }}
-                    >
-                        <motion.a
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-slide-up delay-300">
+                        <a
                             href="#projects"
-                            className="btn-primary"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
+                            className="btn-primary hover:scale-105 transition-transform"
                         >
                             View Projects
-                        </motion.a>
-                        <motion.a
+                        </a>
+                        <a
                             href="#contact"
-                            className="btn-secondary"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
+                            className="btn-secondary hover:scale-105 transition-transform"
                         >
-                            Contact Me
-                        </motion.a>
-                    </motion.div>
+                            Contact
+                        </a>
+                    </div>
 
                     {/* Social Icons */}
-                    <motion.div
-                        className="flex justify-center gap-6"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.7 }}
-                    >
-                        {[
-                            { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
-                            { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-                            { icon: FaEnvelope, href: 'mailto:hello@example.com', label: 'Email' },
-                        ].map((social) => (
-                            <motion.a
-                                key={social.label}
-                                href={social.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={`p-3 rounded-xl ${darkMode ? 'bg-white/5 text-gray-300 hover:text-primary-400 hover:bg-white/10' : 'bg-gray-100 text-gray-600 hover:text-primary-600 hover:bg-gray-200'} transition-all`}
-                                whileHover={{ scale: 1.1, y: -3 }}
-                                whileTap={{ scale: 0.95 }}
-                                aria-label={social.label}
-                            >
-                                <social.icon size={24} />
-                            </motion.a>
-                        ))}
-                    </motion.div>
-                </motion.div>
+                    <div className="flex justify-center gap-6 animate-slide-up delay-400">
+                        <a
+                            href="https://github.com/nyndfrj"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`p-3 rounded-xl ${darkMode ? 'bg-white/5 text-gray-300 hover:text-white hover:bg-white/10' : 'bg-gray-100 text-gray-600 hover:text-gray-900 hover:bg-gray-200'} transition-all hover:scale-110 hover:-translate-y-1`}
+                            aria-label="GitHub"
+                        >
+                            <FaGithub size={24} />
+                        </a>
+                        <a
+                            href="https://instagram.com/nyndra.aj"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`p-3 rounded-xl ${darkMode ? 'bg-white/5 text-gray-300 hover:text-pink-400 hover:bg-white/10' : 'bg-gray-100 text-gray-600 hover:text-pink-600 hover:bg-gray-200'} transition-all hover:scale-110 hover:-translate-y-1`}
+                            aria-label="Instagram"
+                        >
+                            <FaInstagram size={24} />
+                        </a>
+                        <a
+                            href="mailto:nayendra@example.com"
+                            className={`p-3 rounded-xl ${darkMode ? 'bg-white/5 text-gray-300 hover:text-primary-400 hover:bg-white/10' : 'bg-gray-100 text-gray-600 hover:text-primary-600 hover:bg-gray-200'} transition-all hover:scale-110 hover:-translate-y-1`}
+                            aria-label="Email"
+                        >
+                            <FaEnvelope size={24} />
+                        </a>
+                    </div>
+                </div>
 
                 {/* Scroll indicator */}
-                <motion.div
-                    className="absolute bottom-8 left-1/2 -translate-x-1/2"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1, y: [0, 10, 0] }}
-                    transition={{ delay: 1, y: { repeat: Infinity, duration: 2 } }}
-                >
+                <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
                     <a href="#about" className={`${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>
                         <HiChevronDown size={32} />
                     </a>
-                </motion.div>
+                </div>
             </div>
         </section>
     )

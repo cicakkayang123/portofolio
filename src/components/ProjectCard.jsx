@@ -1,15 +1,8 @@
-import { motion } from 'framer-motion'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
-function ProjectCard({ project, darkMode, index }) {
+function ProjectCard({ project, darkMode }) {
     return (
-        <motion.div
-            className={`group rounded-2xl overflow-hidden ${darkMode ? 'glass' : 'bg-white shadow-lg'} card-hover`}
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: index * 0.1 }}
-            layout
-        >
+        <div className={`group rounded-2xl overflow-hidden ${darkMode ? 'glass' : 'bg-white shadow-lg'} card-hover`}>
             {/* Project Image Placeholder */}
             <div className={`h-48 ${darkMode ? 'bg-gradient-to-br from-primary-600/30 to-purple-600/30' : 'bg-gradient-to-br from-primary-100 to-purple-100'} relative overflow-hidden`}>
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -21,28 +14,24 @@ function ProjectCard({ project, darkMode, index }) {
                 {/* Hover overlay with links */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                     {project.github && (
-                        <motion.a
+                        <a
                             href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.95 }}
+                            className="p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors hover:scale-110 transform"
                         >
                             <FaGithub size={20} />
-                        </motion.a>
+                        </a>
                     )}
                     {project.demo && (
-                        <motion.a
+                        <a
                             href={project.demo}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.95 }}
+                            className="p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors hover:scale-110 transform"
                         >
                             <FaExternalLinkAlt size={18} />
-                        </motion.a>
+                        </a>
                     )}
                 </div>
             </div>
@@ -81,7 +70,7 @@ function ProjectCard({ project, darkMode, index }) {
                     ))}
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }
 
