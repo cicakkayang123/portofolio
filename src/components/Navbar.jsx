@@ -21,7 +21,7 @@ function Navbar({ darkMode, toggleDarkMode }) {
                         href="#"
                         className="text-xl font-bold gradient-text hover:scale-105 transition-transform"
                     >
-                        &lt;Dev /&gt;
+                        Portofolio
                     </a>
 
                     {/* Desktop Navigation */}
