@@ -40,7 +40,7 @@ function About({ darkMode }) {
 
                         <div className={`space-y-4 ${darkMode ? 'text-gray-400' : 'text-gray-600'} leading-relaxed`}>
                             <p>
-                                I'm <span className="font-semibold text-primary-400">Nayendra Ajidiwanto Jaelani</span>,
+                                I'm <span className="font-semibold text-blue-400">Nayendra Ajidiwanto Jaelani</span>,
                                 an Informatics and Software Engineering student at Politeknik Negeri Jakarta.
                                 I'm passionate about creating modern web applications and continuously improving my skills
                                 in software development.
@@ -81,8 +81,8 @@ function About({ darkMode }) {
                                 style={{ animationDelay: `${index * 100}ms` }}
                             >
                                 <div className="flex items-start gap-4">
-                                    <div className={`p-3 rounded-xl ${darkMode ? 'bg-primary-500/20' : 'bg-primary-100'}`}>
-                                        <item.icon className={`w-6 h-6 ${darkMode ? 'text-primary-400' : 'text-primary-600'}`} />
+                                    <div className={`p-3 rounded-xl ${darkMode ? 'bg-blue-500/20' : 'bg-blue-100'}`}>
+                                        <item.icon className={`w-6 h-6 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
                                     </div>
                                     <div>
                                         <h4 className={`text-lg font-semibold mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>

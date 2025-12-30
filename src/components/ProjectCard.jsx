@@ -4,9 +4,9 @@ function ProjectCard({ project, darkMode }) {
     return (
         <div className={`group rounded-2xl overflow-hidden ${darkMode ? 'glass' : 'bg-white shadow-lg'} card-hover`}>
             {/* Project Image Placeholder */}
-            <div className={`h-48 ${darkMode ? 'bg-gradient-to-br from-primary-600/30 to-purple-600/30' : 'bg-gradient-to-br from-primary-100 to-purple-100'} relative overflow-hidden`}>
+            <div className={`h-48 ${darkMode ? 'bg-gradient-to-br from-blue-600/30 to-orange-500/30' : 'bg-gradient-to-br from-blue-100 to-orange-100'} relative overflow-hidden`}>
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <span className={`text-4xl font-bold ${darkMode ? 'text-white/20' : 'text-primary-300'}`}>
+                    <span className={`text-4xl font-bold ${darkMode ? 'text-white/20' : 'text-blue-300'}`}>
                         {project.name.charAt(0)}
                     </span>
                 </div>
@@ -40,8 +40,8 @@ function ProjectCard({ project, darkMode }) {
             <div className="p-6">
                 {/* Category Badge */}
                 <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-3 ${darkMode
-                        ? 'bg-primary-500/20 text-primary-300'
-                        : 'bg-primary-100 text-primary-700'
+                    ? 'bg-blue-500/20 text-blue-300'
+                    : 'bg-blue-100 text-blue-700'
                     }`}>
                     {project.category}
                 </span>

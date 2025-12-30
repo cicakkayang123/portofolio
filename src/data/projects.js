@@ -6,7 +6,7 @@ export const projects = [
         tech: ['React', 'Node.js', 'PostgreSQL', 'Tailwind CSS'],
         category: 'Web Application',
         role: 'Full Stack Developer',
-        github: 'https://github.com/nyndfrj',
+        github: 'https://github.com/cicakkayang123',
         demo: 'https://example.com',
     },
     {
@@ -16,7 +16,7 @@ export const projects = [
         tech: ['React', 'JavaScript', 'CSS', 'Web Audio API'],
         category: 'Web Application',
         role: 'Frontend Developer',
-        github: 'https://github.com/nyndfrj',
+        github: 'https://github.com/cicakkayang123',
         demo: 'https://example.com',
     },
     {
@@ -26,7 +26,7 @@ export const projects = [
         tech: ['Laravel', 'React', 'PostgreSQL', 'Tailwind CSS'],
         category: 'Admin Dashboard',
         role: 'Full Stack Developer',
-        github: 'https://github.com/nyndfrj',
+        github: 'https://github.com/cicakkayang123',
         demo: null,
     },
     {
@@ -36,7 +36,7 @@ export const projects = [
         tech: ['PHP', 'Laravel', 'MySQL', 'Bootstrap'],
         category: 'Data / Decision Support System',
         role: 'Full Stack Developer',
-        github: 'https://github.com/nyndfrj',
+        github: 'https://github.com/cicakkayang123',
         demo: null,
     },
     {
@@ -46,7 +46,7 @@ export const projects = [
         tech: ['Python', 'TensorFlow', 'OpenCV', 'Flask'],
         category: 'Computer Vision',
         role: 'ML Developer',
-        github: 'https://github.com/nyndfrj',
+        github: 'https://github.com/cicakkayang123',
         demo: null,
     },
     {
@@ -56,7 +56,7 @@ export const projects = [
         tech: ['React Native', 'Firebase', 'JavaScript'],
         category: 'Mobile Application',
         role: 'Mobile Developer',
-        github: 'https://github.com/nyndfrj',
+        github: 'https://github.com/cicakkayang123',
         demo: null,
     },
 ]

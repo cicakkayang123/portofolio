@@ -6,15 +6,15 @@ function Hero({ darkMode }) {
         <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
             {/* Background gradient orbs */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl animate-float" />
-                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-float delay-300" />
-                <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl animate-pulse-slow" />
+                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-float" />
+                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl animate-float delay-300" />
+                <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl animate-pulse-slow" />
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <div className="animate-fade-in">
                     {/* Greeting */}
-                    <p className={`text-lg md:text-xl ${darkMode ? 'text-primary-400' : 'text-primary-600'} font-medium mb-4`}>
+                    <p className={`text-lg md:text-xl ${darkMode ? 'text-blue-400' : 'text-blue-600'} font-medium mb-4`}>
                         Hello, I'm
                     </p>
 
@@ -52,7 +52,7 @@ function Hero({ darkMode }) {
                     {/* Social Icons */}
                     <div className="flex justify-center gap-6 animate-slide-up delay-400">
                         <a
-                            href="https://github.com/nyndfrj"
+                            href="https://github.com/cicakkayang123"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={`p-3 rounded-xl ${darkMode ? 'bg-white/5 text-gray-300 hover:text-white hover:bg-white/10' : 'bg-gray-100 text-gray-600 hover:text-gray-900 hover:bg-gray-200'} transition-all hover:scale-110 hover:-translate-y-1`}
@@ -70,8 +70,10 @@ function Hero({ darkMode }) {
                             <FaInstagram size={24} />
                         </a>
                         <a
-                            href="mailto:nayendra@example.com"
-                            className={`p-3 rounded-xl ${darkMode ? 'bg-white/5 text-gray-300 hover:text-primary-400 hover:bg-white/10' : 'bg-gray-100 text-gray-600 hover:text-primary-600 hover:bg-gray-200'} transition-all hover:scale-110 hover:-translate-y-1`}
+                            href="https://mail.google.com/mail/?view=cm&to=nayendraaj19@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`p-3 rounded-xl ${darkMode ? 'bg-white/5 text-gray-300 hover:text-blue-400 hover:bg-white/10' : 'bg-gray-100 text-gray-600 hover:text-blue-600 hover:bg-gray-200'} transition-all hover:scale-110 hover:-translate-y-1`}
                             aria-label="Email"
                         >
                             <FaEnvelope size={24} />

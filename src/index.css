@@ -17,12 +17,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6366f1;
+  background: #3b82f6;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #818cf8;
+  background: #60a5fa;
 }
 
 /* Base styles */
@@ -32,12 +32,12 @@ body {
 
 /* Selection color */
 ::selection {
-  @apply bg-primary-500/30 text-white;
+  @apply bg-blue-500/30 text-white;
 }
 
-/* Gradient text utility */
+/* Gradient text utility - Blue to Orange */
 .gradient-text {
-  @apply bg-gradient-to-r from-primary-400 via-purple-400 to-pink-400 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-blue-400 via-cyan-400 to-orange-400 bg-clip-text text-transparent;
 }
 
 /* Glass effect */
@@ -47,11 +47,11 @@ body {
 
 /* Glow effect */
 .glow {
-  box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
 }
 
 .glow-hover:hover {
-  box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
 }
 
 /* Card hover effect */
@@ -60,37 +60,21 @@ body {
 }
 
 .card-hover:hover {
-  @apply -translate-y-2 shadow-xl shadow-primary-500/10;
+  @apply -translate-y-2 shadow-xl shadow-blue-500/10;
 }
 
-/* Badge styles */
+/* Badge styles - Blue to Orange */
 .tech-badge {
-  @apply px-3 py-1.5 rounded-lg text-sm font-medium 
-         bg-gradient-to-r from-primary-500/20 to-purple-500/20 
-         border border-primary-500/30 text-primary-300
-         hover:from-primary-500/30 hover:to-purple-500/30
-         hover:border-primary-400/50 hover:text-primary-200
-         transition-all duration-300 cursor-default;
+  @apply px-3 py-1.5 rounded-lg text-sm font-medium bg-gradient-to-r from-blue-500/20 to-orange-500/20 border border-blue-500/30 text-blue-300 hover:from-blue-500/30 hover:to-orange-500/30 hover:border-blue-400/50 hover:text-blue-200 transition-all duration-300 cursor-default;
 }
 
-/* Button styles */
+/* Button styles - Blue to Orange gradient */
 .btn-primary {
-  @apply px-6 py-3 rounded-xl font-semibold
-         bg-gradient-to-r from-primary-600 to-purple-600
-         hover:from-primary-500 hover:to-purple-500
-         text-white shadow-lg shadow-primary-500/25
-         hover:shadow-xl hover:shadow-primary-500/40
-         transform hover:-translate-y-0.5
-         transition-all duration-300;
+  @apply px-6 py-3 rounded-xl font-semibold bg-gradient-to-r from-blue-600 to-orange-500 hover:from-blue-500 hover:to-orange-400 text-white shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-orange-500/30 transform hover:-translate-y-0.5 transition-all duration-300;
 }
 
 .btn-secondary {
-  @apply px-6 py-3 rounded-xl font-semibold
-         bg-white/5 border border-white/20
-         hover:bg-white/10 hover:border-white/30
-         text-gray-200 hover:text-white
-         transform hover:-translate-y-0.5
-         transition-all duration-300;
+  @apply px-6 py-3 rounded-xl font-semibold bg-white/5 border border-white/20 hover:bg-white/10 hover:border-white/30 text-gray-200 hover:text-white transform hover:-translate-y-0.5 transition-all duration-300;
 }
 
 /* Section title */
@@ -103,8 +87,22 @@ body {
 }
 
 /* Animation delays */
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
-.delay-400 { animation-delay: 400ms; }
-.delay-500 { animation-delay: 500ms; }
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}

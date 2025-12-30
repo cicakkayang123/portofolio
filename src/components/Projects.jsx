@@ -29,10 +29,10 @@ function Projects({ darkMode }) {
                             key={category}
                             onClick={() => setActiveCategory(category)}
                             className={`px-4 py-2 rounded-xl text-xs md:text-sm font-medium transition-all duration-300 hover:scale-105 ${activeCategory === category
-                                    ? 'bg-gradient-to-r from-primary-600 to-purple-600 text-white shadow-lg shadow-primary-500/25'
-                                    : darkMode
-                                        ? 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
-                                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                                ? 'bg-gradient-to-r from-blue-600 to-orange-500 text-white shadow-lg shadow-blue-500/25'
+                                : darkMode
+                                    ? 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
+                                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                                 }`}
                         >
                             {category}

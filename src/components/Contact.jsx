@@ -5,15 +5,15 @@ const contactLinks = [
     {
         icon: FaEnvelope,
         label: 'Email',
-        value: 'nayendra@example.com',
-        href: 'mailto:nayendra@example.com',
+        value: 'nayendraaj19@gmail.com',
+        href: 'https://mail.google.com/mail/?view=cm&to=nayendraaj19@gmail.com',
         color: 'from-red-500 to-orange-500',
     },
     {
         icon: FaGithub,
         label: 'GitHub',
-        value: '@nyndfrj',
-        href: 'https://github.com/nyndfrj',
+        value: '@cicakkayang123',
+        href: 'https://github.com/cicakkayang123',
         color: 'from-gray-600 to-gray-800',
     },
     {
@@ -42,8 +42,8 @@ function Contact({ darkMode }) {
                     {/* Email CTA */}
                     <div className="mb-10">
                         <div className={`inline-flex items-center justify-center w-20 h-20 rounded-full mb-6 ${darkMode
-                                ? 'bg-gradient-to-r from-primary-600 to-purple-600'
-                                : 'bg-gradient-to-r from-primary-500 to-purple-500'
+                            ? 'bg-gradient-to-r from-blue-600 to-orange-500'
+                            : 'bg-gradient-to-r from-blue-500 to-orange-400'
                             } hover:scale-110 transition-transform`}>
                             <HiMail className="w-10 h-10 text-white" />
                         </div>
@@ -58,7 +58,9 @@ function Contact({ darkMode }) {
                         </p>
 
                         <a
-                            href="mailto:nayendra@example.com"
+                            href="https://mail.google.com/mail/?view=cm&to=nayendraaj19@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="btn-primary inline-flex items-center gap-2 hover:scale-105 transition-transform"
                         >
                             <FaEnvelope />
@@ -78,8 +80,8 @@ function Contact({ darkMode }) {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={`flex items-center gap-4 p-4 rounded-xl ${darkMode
-                                        ? 'bg-white/5 hover:bg-white/10'
-                                        : 'bg-gray-50 hover:bg-gray-100'
+                                    ? 'bg-white/5 hover:bg-white/10'
+                                    : 'bg-gray-50 hover:bg-gray-100'
                                     } transition-colors group hover:scale-[1.03] transform`}
                             >
                                 <div className={`p-3 rounded-xl bg-gradient-to-r ${link.color}`}>
