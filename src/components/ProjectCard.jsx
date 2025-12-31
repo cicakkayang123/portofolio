@@ -1,4 +1,4 @@
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaFolder, FaExternalLinkAlt } from 'react-icons/fa'
 
 function ProjectCard({ project, darkMode }) {
     return (
@@ -20,7 +20,7 @@ function ProjectCard({ project, darkMode }) {
                             rel="noopener noreferrer"
                             className="p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors hover:scale-110 transform"
                         >
-                            <FaGithub size={20} />
+                            <FaFolder size={20} />
                         </a>
                     )}
                     {project.demo && (

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import ProjectCard from './ProjectCard'
 import { projects } from '../data/projects'
 
-const categories = ['All', 'Web Application', 'Admin Dashboard', 'Mobile Application', 'Data / Decision Support System', 'Computer Vision']
+const categories = ['All', 'Web Application', 'UI/UX', 'Decision Support', 'Mobile App']
 
 function Projects({ darkMode }) {
     const [activeCategory, setActiveCategory] = useState('All')
