@@ -1,4 +1,4 @@
-import { FaGithub, FaInstagram, FaEnvelope, FaHeart } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaEnvelope } from 'react-icons/fa'
 import { HiMail, HiLocationMarker } from 'react-icons/hi'
 
 const contactLinks = [
@@ -106,10 +106,6 @@ function Contact({ darkMode }) {
                     </div>
                 </div>
 
-                {/* Made with love */}
-                <p className={`text-center mt-12 text-sm ${darkMode ? 'text-gray-600' : 'text-gray-400'}`}>
-                    Made with <FaHeart className="inline text-red-500" /> by Nayendra
-                </p>
             </div>
         </section>
     )
