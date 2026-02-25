@@ -21,7 +21,7 @@ function Navbar({ darkMode, toggleDarkMode }) {
                         href="#"
                         className="text-xl font-bold gradient-text hover:scale-105 transition-transform"
                     >
-                        Portofolio
+                        <img src="/logo.png" alt="Logo" className="h-8 w-auto hover:opacity-80 transition-opacity" />
                     </a>
 
                     {/* Desktop Navigation */}
