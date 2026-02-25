@@ -1,7 +1,7 @@
 import {
     SiReact, SiTailwindcss, SiFirebase, SiNodedotjs,
     SiLaravel, SiPostgresql, SiJavascript, SiHtml5,
-    SiCss3
+    SiCss3, SiAndroidstudio
 } from 'react-icons/si'
 
 const technologies = [
@@ -14,6 +14,7 @@ const technologies = [
     { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
     { name: 'PostgreSQL', icon: SiPostgresql, color: '#4169E1' },
     { name: 'Firebase', icon: SiFirebase, color: '#FFCA28' },
+    { name: 'Android Studio', icon: SiAndroidstudio, color: '#3DDC84' },
 ]
 
 function TechStack({ darkMode }) {
